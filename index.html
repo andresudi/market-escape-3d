@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rabbit Market Extraction 3D</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main class="shell" aria-label="Rabbit Market Extraction 3D">
+      <canvas id="game" aria-label="Rabbit Market Extraction 3D">
+        Your browser does not support canvas.
+      </canvas>
+      <section class="hud" aria-live="polite">
+        <div class="status-strip">
+          <div><span>Time</span><strong id="timeText">02:00</strong></div>
+          <div><span>Loot</span><strong id="lootText">0</strong></div>
+          <div><span>Noise</span><strong id="noiseText">Low</strong></div>
+        </div>
+        <div class="backpack" id="backpack" aria-label="Backpack slots"></div>
+        <div class="prompt" id="promptText">WASD move, Shift sprint, Space hide, R restart.</div>
+        <div class="modal hidden" id="modal">
+          <div>
+            <span id="modalKicker">Extracted</span>
+            <h1 id="modalTitle">The rabbit is safe.</h1>
+            <p id="modalBody">Press R to play again.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./market3d.js"></script>
+  </body>
+</html>
